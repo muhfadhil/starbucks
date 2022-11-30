@@ -1,0 +1,91 @@
+main {
+  display: flex;
+  gap: 20px;
+  color: white;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  gap: 20px;
+  /* background-color: #007042; */
+  padding: 20px;
+}
+.title {
+  border-radius: 15px;
+  text-align: center;
+  background-color: #007042;
+  padding: 5px 0;
+}
+.title h1 {
+  text-transform: uppercase;
+  font-size: 24px;
+}
+.table-content thead th {
+  padding: 10px 0;
+}
+.table-content tbody tr td {
+  width: 20%;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.table-content tbody tr td:first-child {
+  width: 100px;
+  text-align: left;
+}
+/* ASIDE */
+aside {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-basis: 30%;
+  background-color: #007042;
+  height: 200px;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.apply-form {
+  margin-bottom: 70px;
+}
+
+.apply-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.apply-form form select {
+  padding: 10px;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #07e689;
+  outline: #07e689;
+}
+
+#apply-button {
+  width: max-content;
+  padding: 7px 10px;
+  background-color: #07e689;
+  border: 1px solid #03995a;
+  outline: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+#apply-button:hover {
+  background-color: #03995a;
+  border: 1px solid #07e689;
+}
+
+#apply-button:disabled {
+  background-color: #03995a;
+  border: 1px solid #03995a;
+
+  cursor: default;
+}
+
+/* AKHIR ASIDE */

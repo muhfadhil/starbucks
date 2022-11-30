@@ -1,0 +1,73 @@
+CREATE DATABASE starbucks_menu;
+
+CREATE TABLE `starbucks_menu`.`frappuccino` 
+( `id` INT NOT NULL AUTO_INCREMENT ,
+  `menu` VARCHAR(100) NOT NULL ,
+  `tall` INT NOT NULL ,
+  `grande` INT NOT NULL ,
+  `venti` INT NOT NULL ,
+  PRIMARY KEY  (`id`))
+  ENGINE = InnoDB;
+  
+CREATE TABLE `starbucks_menu`.`chocolate_teavana` 
+( `id` INT NOT NULL AUTO_INCREMENT ,
+  `menu` VARCHAR(100) NOT NULL ,
+  `tall` INT NOT NULL ,
+  `grande` INT NOT NULL ,
+  `venti` INT NOT NULL ,
+  PRIMARY KEY  (`id`)) 
+  ENGINE = InnoDB;
+  
+CREATE TABLE `starbucks_menu`.`espresso_brewed_coffee` 
+( `id` INT NOT NULL AUTO_INCREMENT ,
+  `menu` VARCHAR(100) NOT NULL ,
+  `tall` INT NOT NULL ,
+  `grande` INT NULL ,
+  `venti` INT NULL ,
+  PRIMARY KEY  (`id`)) 
+  ENGINE = InnoDB;
+
+USE starbucks_menu;
+
+INSERT INTO `frappuccino` 
+(`id`, `menu`, `tall`, `grande`, `venti`) 
+	VALUES 
+(NULL, 'Caramel Java Chip', '53', '58', '62'),
+(NULL, 'Mocha', '48', '53', '58'),
+(NULL, 'Dark Mocha', '53', '58', '62'),
+(NULL, 'Java Chip', '53', '58', '62'),
+(NULL, 'Coffee', '39', '43', '46'),
+(NULL, 'Asian DoIce', '48', '53', '58'),
+(NULL, 'Vanilla Cream', '46', '51', '55'),
+(NULL, 'Chocolate Chip Cream', '53', '58', '62'),
+(NULL, 'Green Tea Cream', '53', '58', '62'),
+(NULL, 'Mango Passion Fruit', '39', '43', '46'),
+(NULL, 'Raspberry Black Currant', '39', '43', '46');
+
+INSERT INTO `chocolate_teavana` 
+(`id`, `menu`, `tall`, `grande`, `venti`) 
+	VALUES 
+(NULL, 'Signature Chocolate', '50', '56', '60'), 
+(NULL, 'Green Tea Latte', '53', '58', '62'), 
+(NULL, 'Black Tea Latte', '40', '44', '48'), 
+(NULL, 'Iced Shaken Tea', '22', '25', '27'), 
+(NULL, 'Iced Shaken Lemon Tea', '40', '43', '46'), 
+(NULL, 'Black Tea', '22', '25', '27'), 
+(NULL, 'Green Tea', '22', '25', '27'), 
+(NULL, 'Caffeine-Free Herbal Tea', '22', '25', '27');
+
+INSERT INTO `espresso_brewed_coffee` 
+(`id`, `menu`, `tall`, `grande`, `venti`) 
+	VALUES 
+(NULL, 'Double Shots Iced Shaken Espresso', '48', NULL, NULL), 
+(NULL, 'Caffe Americano', '34', '37', '39'), 
+(NULL, 'Caramel Macchiato', '57', '62', '65'), 
+(NULL, 'Cascara Macchiato', '57', '62', '65'), 
+(NULL, 'Asian DoIce Latte', '53', '58', '60'), 
+(NULL, 'Vanilla Caramel/Hazelnut Latte', '50', '55', '58'), 
+(NULL, 'Caffe Latte', '44', '49', '52'), 
+(NULL, 'Cappuccino', '44', '49', '52'), 
+(NULL, 'Caffe Mocha', '53', '58', '60'), 
+(NULL, 'Cold Brew', '41', '45', '48'), 
+(NULL, 'Vanilla Sweet Cream Cold Brew', '47', '51', '54'), 
+(NULL, 'Freshly Brewed Coffee', '23', '25', '27');
